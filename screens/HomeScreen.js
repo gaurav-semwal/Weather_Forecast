@@ -58,7 +58,7 @@ const HomeScreen = () => {
 
   const fetchMyWeatherData = async () => {
     let myCity = await getData('city');
-    let cityName = 'Kedarnath';
+    let cityName = 'Ambala';
     if (myCity) {
       cityName = myCity;
     }
@@ -83,7 +83,7 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <MyComponent style="light" />
         <Image
-          blurRadius={4}
+          blurRadius={3}
           source={require('../assets/images/bg1.png')}
           style={styles.backgroundImage}
         />
