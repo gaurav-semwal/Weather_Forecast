@@ -83,7 +83,7 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <MyComponent style="light" />
         <Image
-          blurRadius={3}
+          blurRadius={2}
           source={require('../assets/images/bg1.png')}
           style={styles.backgroundImage}
         />
@@ -339,10 +339,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    top: 10,
   },
   forecastWeatherIcon: {
-    width: 180,
-    height: 180,
+    width: 170,
+    height: 170,
   },
   forecastDegreeContainer: {
     justifyContent: 'space-between',
@@ -357,7 +358,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',
-    fontSize: 85,
+    fontSize: 75,
     fontWeight: 'bold',
     marginLeft: 15,
   },
